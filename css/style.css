@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+}
+
+.bg-grey {
+    background: #f7f7f7;
+}
+
+section > .container{
+    width: 80%;
+    margin: auto auto 48px;
+    line-height: 1.8;
+}
+
+#nav-bar {
+    text-align: center;
+}
+#nav-bar a{
+    text-decoration: none;
+}
+
+#banner{
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    color: #ffffff;
+}
+.banner-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner-content h1{
+    font-size: 64px;
+}
+.banner-content p{
+    font-size: 20px;
+}
+.navbar{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    justify-content: center;
+    color: rgba(0,0,0,0.72);
+    align-items: center;
+    margin: 0;
+}
+.navbar li{
+    padding: 10px;
+}
+.navbar li:nth-child(3){
+    font-size: 20px;
+}
+#nav-bar .container{
+    margin: auto auto 0;
+}
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: end;
+    align-items: center;
+    padding: 30px;
+    font-size: 20px;
+    color: rgba(0,0,0,0.72);
+
+}
+
+.about h1{
+    margin-bottom: 32px;
+    font-size: 30px;
+}
+
+#personal-info ul{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+
+#job-info .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    color: rgba(0,0,0,0.72);
+
+}
+#job-info h1{
+    display: flex;
+    justify-content: space-between;
+}
+.job-item{
+    margin: 24px 24px;
+    border: 1px solid rgba(206, 197, 197, 0.5);
+    padding: 44px;
+
+}
+.job-item i{
+    color: #0c4128;
+}
+
+.job-item h1{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.job-item h3{
+    margin-bottom: 10px;
+}
+
+.job-item ul{
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+.job-item ul>li:before{
+    content: "- ";
+}
+
+.hobby{
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    justify-content:center ;
+}
+.hobby i{
+    width: 1vw;
+    border: 3px solid rgba(39, 222, 188, 0.94);
+    border-radius: 50%;
+    outline-offset: 3px;
+    padding: 1vw;
+
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+}
+.hobby p{
+    margin-left: 1.3vw;
+}
+.level-blue{
+    background: #199cdb;
+    display: inline-block;
+    height: 3px;
+    margin-right: 10px;
+    width: 45px;
+}
+.level-grey{
+    background: rgba(70, 67, 67, 0.17);
+    display: inline-block;
+    height: 3px;
+    margin-right: 10px;
+    width: 45px;
+}
+
+.cert-image{
+    width: 250px;
+    height: auto;
+}
+
+#certificate ul{
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+#certificate ul>li:before{
+    content: "- ";
+}
+
+#certificate{
+    padding: 32px;
+    color:rgba(0,0,0,0.72);
+}
+
+#certificate h1{
+    font-size: 30px;
+    margin-bottom: 24px;
+}
+
+.cert-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+
+}
+
+.cert-detail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    padding: 20px;
+
+}
+
+#project{
+    margin: 40px;
+    color: rgba(0,0,0,0.72);
+}
+#project h1{
+    font-size: 30px;
+    margin-bottom: 24px;
+}
+
+.project-contain{
+    display: flex;
+    gap: 20px;
+
+}
+.project-contain h2{
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+#project img{
+    width: 100%;
+}
+.project-icon{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    gap: 20px;
+}
+
+.project-contain td{
+    vertical-align: top;
+}
+
+#footer{
+    height: 100px;
+    padding: 20px;
+    font-size: 24px;
+
+}
+#footer .container{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+#avatar{
+    width: 150px;
+    height: auto;
+    border: 2px solid red;
+    border-radius: 50%;
+    padding: 5px;
+    border-image-outset: 2;
+    margin: 0;
+
+}
+
+
+@media (max-width: 1024px)
+{
+    section > .container{
+        width: 90%;
+        margin: auto;
+    }
+
+    #job-info .container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .job-item h1{
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+
+
+    .cert-detail{
+        grid-template-columns: 2fr;
+    }
+
+    #project{
+        margin: 20px;
+    }
+    #project h1{
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    #footer{
+        height:70px;
+        padding: 20px;
+        font-size: 22px;
+
+    }
+
+    #avatar{
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+    section > .container{
+        width: 90%;
+        margin: auto;
+    }
+
+    #banner{
+        height: 50vh;
+        position: relative;
+        background-size: cover;
+        color: #ffffff;
+    }
+    .banner-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .banner-content h1{
+        font-size: 34px;
+    }
+    .banner-content p{
+        font-size: 14px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        color: rgba(0,0,0,0.72);
+        align-items:flex-start;
+        margin: 0;
+    }
+
+    .navbar li:nth-child(3){
+        font-size: 0;
+    }
+    #nav-bar .container{
+        margin: auto auto 0;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: start;
+        padding: 10px;
+        font-size: 16px;
+        color: rgba(0,0,0,0.72);
+        column-gap: 10px;
+        justify-content: space-between;
+
+    }
+
+    .about h1{
+        margin-bottom: 12px;
+        font-size: 24px;
+    }
+
+    #job-info .container{
+        grid-template-columns: 1fr;
+ }
+
+    .job-item h1{
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+
+    #certificate ul{
+        list-style-type: none;
+        margin-bottom: 15px;
+    }
+    #certificate ul>li:before{
+        content: "- ";
+    }
+
+
+    #certificate h1{
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .cert-details{
+        grid-template-columns: 1fr;
+    }
+
+    .cert-detail{
+
+        grid-template-columns: 1fr;
+
+    }
+
+    #project{
+        margin: 20px;
+    }
+    #project h1{
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .project-contain{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-icon{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #footer{
+        height: 30px;
+        padding: 20px;
+        font-size: 16px;
+
+    }
+
+    #avatar{
+        display: none;
+    }
+
+}
